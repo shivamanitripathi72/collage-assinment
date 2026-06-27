@@ -1,4 +1,4 @@
-from more_itertools.recipes import is_prime
+from sympy import isprime
 
 a = int(input("enter the number to perform operation:- "))
 match a:
@@ -56,7 +56,7 @@ match a:
         elif operations == "4":
             number = int(input("enter the number for print prime number:-"))
             for i in range(1,number+1):
-                if is_prime(i):
+                if isprime(i):
                     print(i,end=" ")
         elif operations == "5":
             for i in range(1,5):
@@ -98,7 +98,7 @@ match a:
                 print("This is odd number:- ",number)
         elif operations == "3":
             number = int(input("enter the number to check prime number:-"))
-            if is_prime(number):
+            if isprime(number):
                 print("This is prime number:- ",number)
         elif operations == "4":
             number = int(input("enter the number to print tabel:- "))
